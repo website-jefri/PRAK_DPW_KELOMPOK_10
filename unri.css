@@ -1,23 +1,52 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px;
+}
+/* NAVBAR */
 .ft-navbar{
-  background:#b40000;
+  background-color: #b40000; /* merah FT */
+  height: 80px;
+}
+.navbar-brand img{
+  margin-left: 15px;
 }
 .ft-navbar .nav-link{
-    color: #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 8px 12px;
 }
 .ft-navbar .nav-link:hover{
-    color: #ffdede !important; 
+  color: #ffdede !important;
 }
-.section-title{
-  border-left:6px solid #b40000;
-  padding-left:12px;
-  font-weight:700;
-}
+/* unutuk ngatur navbar mobile */
+@media (max-width: 991.98px){
+  .ft-navbar{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .navbar-collapse{
+    position: fixed;
+    top: 80px;        
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 20px 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+    .navbar-collapse .nav-link{
+    color: #000 !important;  
+    font-weight: 500;
+    text-align: left;
+  }
+  .navbar-nav{
+    gap: 0 !important;
+  }
 
-.ft-footer{
-  background:#0c0c0c;
-}
-body{
-    font-family: 'Poppins', sans-serif;
-     padding-top: 80px; 
-
+  .navbar-nav .nav-link{
+    padding: 12px 0;
+  }
 }
